@@ -35,7 +35,7 @@ function WorkPage(props: Props) {
       <div className="flex w-full flex-col items-center justify-center p-8 text-center lg:w-1/2">
         <article>
           <h1 className="my-4 text-2xl font-bold">{props.title}</h1>
-          <pre className="text-gray-700 mb-4 w-2/3 text-left font-sans leading-normal">
+          <pre className="text-gray-700 mb-4 w-full text-center font-sans leading-normal break-words whitespace-pre-wrap">
             {props.description}
           </pre>
         </article>

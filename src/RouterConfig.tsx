@@ -2,11 +2,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import MemoApp from './MemoApp';
 import OneCanvas from './OneCanvas';
-import MemoAppPNG from './assets/memoapp.png';
 import Navbar from './Navbar';
+import Skills from './Skills';
 
 function RouterConfig() {
-  console.log(MemoAppPNG);
   return (
     <>
       <BrowserRouter>

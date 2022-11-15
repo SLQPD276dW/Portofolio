@@ -14,6 +14,7 @@ function RouterConfig() {
           <Route index element={<App />} />
           <Route path="memo-app" element={<MemoApp />} />
           <Route path="one-canvas" element={<OneCanvas />} />
+          <Route path="skills" element={<Skills />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,27 +1,55 @@
-import { Skill } from "./SkillType";
+import { Skill } from './SkillType';
 
 type Props = {
   skills: Skill[];
 };
 
-function Skills(props: Props) {
+function Skills() {
+  const skills: Skill[] = [
+    {
+      name: 'TypeScript',
+      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg',
+    },
+    {
+      name: 'React',
+      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    },
+    {
+      name: 'Next.js',
+      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg',
+    },
+    {
+      name: 'Tailwind CSS',
+      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
+    },
+    {
+      name: 'Go',
+      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg',
+    },
+    {
+      name: 'Github',
+      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    },
+    {
+      name: 'Visual Studio Code',
+      img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg',
+    },
+  ];
+
   return (
     <section className="container m-auto flex max-w-2xl flex-col flex-wrap items-center justify-start md:flex-row">
-      {props.skills.map((skill) => {
+      {skills.map((skill) => {
         return (
-          <div className="h-auto w-full p-3 lg:w-1/2">
+          <div className="h-auto w-full p-3 lg:w-1/3" key={skill.name}>
             <div className="flex h-auto flex-col overflow-hidden rounded border shadow-sm">
               <img
-                className="block h-48 w-full flex-none bg-cover md:h-full"
+                className="block h-48 w-full flex-none bg-cover p-2 md:h-full"
                 src={skill.img}
-                // width={800}
-                // height={600}
               />
               <div className="flex flex-col justify-between rounded-b bg-white p-4 leading-normal lg:rounded-b-none lg:rounded-r">
                 <div className="mb-2 text-xl font-bold leading-tight text-black">
                   {skill.name}
                 </div>
-                <p className="text-gray-700 text-base">Read more</p>
               </div>
             </div>
           </div>

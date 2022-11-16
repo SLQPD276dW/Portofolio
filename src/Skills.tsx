@@ -19,6 +19,10 @@ function Skills() {
       img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg',
     },
     {
+      name: 'Vite',
+      img: 'src/assets/vite.svg',
+    },
+    {
       name: 'Tailwind CSS',
       img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
     },

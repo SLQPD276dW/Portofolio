@@ -35,7 +35,7 @@ function Skills() {
       img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
     },
     {
-      name: 'Visual Studio Code',
+      name: 'VS Code',
       img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg',
     },
   ];

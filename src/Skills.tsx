@@ -1,4 +1,5 @@
 import { Skill } from './SkillType';
+import ViteSVG from "./assets/vite.svg";
 
 type Props = {
   skills: Skill[];
@@ -20,7 +21,7 @@ function Skills() {
     },
     {
       name: 'Vite',
-      img: 'src/assets/vite.svg',
+      img: ViteSVG,
     },
     {
       name: 'Tailwind CSS',

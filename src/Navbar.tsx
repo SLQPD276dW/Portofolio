@@ -1,7 +1,4 @@
-import { useLocation } from 'react-router-dom';
-
 function Navbar() {
-  const location = useLocation();
   return (
     <nav className="container my-4 mx-auto flex items-center justify-center overflow-hidden bg-white text-center font-sans">
       <ul className="text-gray-700 flex list-none items-center p-0 text-sm">
